@@ -194,15 +194,19 @@ position: relative;
 }
 /* ---------------layout3 -----------------*/
 #wrapper_lay3{
-    max-width: 1000px;
     margin:0px auto;
     height: 1000px;
 }
-
+.selected3{
+    background-color: #cccccc;
+    width: 168px;
+}
+.selected3 a{
+    width: 168px;
+}
 #lay3_body{
     position: relative;
     }
-
 #logo3 {
     position: absolute;
     width: 80px;
@@ -212,14 +216,10 @@ position: relative;
     margin-top: 22px;
     display: block;
 }
-
 #lay3_main{
-    max-width: 1000px;
-    min-height: 1000px;
     background-color: #fd79a8;
     float: left;
 }
-
 #lay3_section{
     position: relative;
     width: 500px;   
@@ -227,14 +227,12 @@ position: relative;
     float: left;
     background-color: #fff;
 }
-
 #h1_lay3{
     font-size: 86px;
     text-align: center;
     padding-top:225px;
     cursor: pointer;
 }
-
 #nav3 {
     width: 500px;
     position: absolute;
@@ -243,7 +241,6 @@ position: relative;
     float: left;
     bottom: 0px;
 }
-
 #nav3 ul li {
     float: left;
 }
@@ -253,24 +250,20 @@ position: relative;
     line-height: 62px;
     text-align: center;
 }
-
 .square{
     float: left;
     width: 250px;
     height: 250px;
     background-color: #000;
 }
-
 .square:hover{
     display: block;
     background-color:#ffffff;
     opacity: 1 !important;
 }
-
 #square1{
     opacity: 0.3;
 }
-
 #square2{
     opacity: 0.6;
 }
@@ -280,3 +273,21 @@ position: relative;
 #square4{
     opacity: 0.1;
 }
+@media only screen and (max-width:998px){
+    #lay3_main {
+       min-height:1000px;
+    }
+    #wrapper_lay3 {
+       width:500px;
+       margin:0px auto;
+    }
+ }
+ @media only screen and (min-width:999px){
+    #lay3_main {
+       min-height: 1000px;
+    }
+    #wrapper_lay3 {
+       width:1000px;
+       margin:0px auto;
+    }
+ }
